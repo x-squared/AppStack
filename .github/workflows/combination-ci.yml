@@ -1,0 +1,27 @@
+name: Combination Web Lanes
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  appstack:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run:web:appstack"
+  appstack_appspec:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run:web:appstack+appspec"
+  appstack_appspec_tplapp:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run:web:appstack+appspec+tpl-app"
+  appstack_appspec_myrpa:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run:web:appstack+appspec+my-rpa"
+  appstack_appspec_chessapp:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "run:web:appstack+appspec+chess-app"
