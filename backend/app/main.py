@@ -1,0 +1,20 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from .config import get_config
+
+app = FastAPI(title="AppStack", version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=get_config().cors_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/api/health")
+def health_check():
+    env = get_config().env.strip().upper()
+    return {"status": "ok", "env": env, "dev_tools_enabled": env in {"DEV", "TEST"}}

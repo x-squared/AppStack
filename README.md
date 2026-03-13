@@ -1,6 +1,6 @@
 # AppStack
 
-Scope: placeholder repository created by migration run.
+Scope: foundational stack repository in AppSpace (currently minimal placeholder baseline).
 
 ## Ownership
 - Team: TBD
@@ -11,3 +11,4 @@ Scope: placeholder repository created by migration run.
 
 ## Notes
 - This repository is part of AppSpace multi-root workspace.
+- Current backend intentionally exposes only baseline config/auth placeholders plus health endpoint.
