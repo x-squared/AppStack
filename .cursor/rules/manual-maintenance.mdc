@@ -1,0 +1,8 @@
+---
+description: Keep manuals in sync with meaningful project changes
+alwaysApply: true
+---
+
+# Manual Maintenance Rule
+
+After implementing changes, evaluate whether manuals under `doc/` should be updated when relevant.

@@ -1,0 +1,11 @@
+---
+description: Keep app-domain logic in app repos and shared infrastructure in AppModules
+alwaysApply: true
+---
+
+# Modules vs App Ownership Boundary
+
+- App repos own domain behavior and app-specific contracts.
+- `AppModules` owns reusable infrastructure primitives only.
+- Do not place app-specific semantics in `AppModules`.
+- Promote code to `AppModules` only when domain-agnostic and reusable across apps.

@@ -1,0 +1,12 @@
+---
+description: End-to-end architecture blueprint for AppStack foundations
+alwaysApply: true
+---
+
+# System Architecture Blueprint
+
+Use this rule as the default blueprint when designing or implementing new capabilities.
+
+- Keep AppStack composable and minimal.
+- Keep routers thin and services responsible for orchestration/business rules.
+- Prefer explicit interfaces and bounded modules over broad cross-cutting handlers.

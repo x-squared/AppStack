@@ -1,0 +1,9 @@
+---
+description: Keep business logic identical across environments
+alwaysApply: true
+---
+
+# No Environment Branching In Business Logic
+
+- Keep domain behavior identical across `DEV`/`TEST`/`PROD`.
+- Use environment branching only for operational settings, not business decisions.

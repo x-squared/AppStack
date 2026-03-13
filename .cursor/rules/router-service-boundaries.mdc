@@ -1,0 +1,10 @@
+---
+description: Keep backend routers thin and move business logic to feature services
+alwaysApply: true
+---
+
+# Router Service Boundaries
+
+- Routers handle HTTP wiring, request validation, auth dependencies, and response mapping.
+- Services or feature modules own business rules and multi-step orchestration.
+- Extract logic from routers once workflows become reusable or cross-entity.

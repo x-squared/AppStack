@@ -1,0 +1,11 @@
+---
+description: Enforce proactive clean architecture and drift prevention
+alwaysApply: true
+---
+
+# Clean Architecture Enforcement
+
+- Keep `AppStack` minimal and composable; avoid accidental monolith growth.
+- Prevent duplicated orchestration logic across entrypoints.
+- Keep endpoint transport concerns separate from domain/service logic.
+- Prefer explicit boundaries and small stable interfaces.
