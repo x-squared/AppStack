@@ -1,0 +1,7 @@
+# GUI Template First Check
+
+When building shared frontend GUI primitives, validate against the GUI Template feature first.
+
+- Prefer adding patterns to the template module before rolling them into app-specific screens.
+- Keep template examples framework-oriented, dummy-data only, and independent from backend APIs.
+- Use template guidance to keep view composition thin and section/table patterns consistent.
